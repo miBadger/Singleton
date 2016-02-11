@@ -1,1 +1,3 @@
 # Singleton
+
+The Singleton Component.
