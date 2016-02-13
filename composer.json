@@ -7,7 +7,7 @@
 		"badger",
 		"singleton"
 	],
-	"homepage": "https://www.mibadger.com/mibadger",
+	"homepage": "https://www.mibadger.com",
 	"license": "Apache-2.0",
 	"authors": [
 		{
@@ -31,10 +31,5 @@
 		"psr-4": {
 			"miBadger\\Singleton\\": "tests/"
 		}
-	},
-	"scripts": {
-		"test": [
-			"phpunit"
-		]
 	}
 }
