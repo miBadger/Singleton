@@ -5,23 +5,39 @@ The singleton trait.
 ## Example(s)
 
 ```php
-// Singleton example
+<?php
+
 use miBadger\Singleton\SingletonTrait;
 
-class SingletonExample
+/**
+ * The example class
+ */
+class Example
 {
 	use SingletonTrait;
 }
+```
 
-// Get singleton instance
-SingletonExample::getInstance();
+```php
+<?php
 
-// Can't construct a singleton object.
-$singleton = new SingletonExample();
+/**
+ * Returns the only instance of the Singleton class.
+ */
+$singleton = Example::getInstance();
 
-// Can't clone a singleton object.
-$singleton = clone SingletonExample::getInstance();
+/**
+ * Protected constructor to prevent creating a new instance of the Singleton class from outside the object.
+ */
+new Example();
 
-// Can't wake up a singleton object.
-$singleton = unserialize(serialize(SingletonExample::getInstance()));
+/**
+ * Protected clone method to prevent cloning of the Singleton instance.
+ */
+clone $singleton;
+
+/**
+ * Protected wakeup method to prevent unserializing of the Singleton instance.
+ */
+unserialize(serialize($singleton));
 ```
