@@ -10,7 +10,7 @@ The singleton trait.
 use miBadger\Singleton\SingletonTrait;
 
 /**
- * The example class
+ * The example class.
  */
 class Example
 {
