@@ -10,12 +10,14 @@
 
 namespace miBadger\Singleton;
 
+use PHPUnit\Framework\TestCase;
+
 /**
  * The singleton trait test class.
  *
  * @since 1.0.0
  */
-class SingletonTraitTest extends \PHPUnit_Framework_TestCase
+class SingletonTraitTest extends TestCase
 {
 	public function testConstructor()
 	{
